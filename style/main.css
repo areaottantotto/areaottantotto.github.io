@@ -30,7 +30,6 @@ h2 {
     }    
 
 h3 {
-    display: block;
     font-family: 'Fira Mono';
     color: floralwhite;
     font-size: 22px;
@@ -42,7 +41,6 @@ h3 {
     }    
 
 h6 {
-    display: block;
     font-family: 'arial';
     color: DimGray;
     font-size: 12px;
@@ -54,14 +52,39 @@ h6 {
     }  
 
 p  {
-    display: block;
     color: floralwhite;
-    font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-family: 'Fira Mono';
     }   
-    
+ 
+/* link colors */
+
+a:link {
+    color: floralwhite;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+a:visited {
+    color: floralwhite;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+a:hover {
+    color: floralwhitei;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+
 /* text color li */
 
 li {color: green;}
@@ -114,7 +137,6 @@ body {
 .grid {
     width: 100%;
     max-width: 1400px;
-    min-width: 720px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -130,10 +152,45 @@ body {
 /* img */   
 
 .responsive {
+    opacity: 1;
     max-width: 100%;
+    border-radius: 4px;
     height: auto;
-  }
+    transition: .5s ease;
+    backface-visibility: hidden;
+    }
 
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+    }
+
+.container {
+    position: relative;
+    width: 100%;
+    }
+
+.container:hover .responsive {
+    opacity: 0.3;
+    }
+      
+.container:hover .middle {
+    opacity: 1;
+    }    
+
+.text {
+    background-color: DarkSlateGray;
+    color: floralwhite;
+    font-family: 'Fira Mono';
+    font-size: 24px;
+    padding: 16px 32px;
+    } 
+    
 /* footer */ 
 
 footer {
@@ -147,12 +204,16 @@ footer {
 
 .box-sub {
     max-width: 100%;
+    display: block;
     height: auto;
     color: floralwhite;
     font-family: 'Fira Mono';
     font-style: bold;
     font-size: 34px;
-    padding: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
     }
 
 .box-name {
@@ -164,3 +225,28 @@ footer {
     font-size: 22px;
     padding: 15px;
     }
+    
+.box-info {
+    max-width: 100%;
+    height: auto;
+    color: floralwhite;
+    font-family: 'Fira Mono';
+    font-style: normal;
+    font-size: 16px;
+    padding: 15px;
+    }
+
+.box-social {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    color: floralwhite;
+    font-family: 'Fira Mono';
+    font-style: bold;
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    }    
