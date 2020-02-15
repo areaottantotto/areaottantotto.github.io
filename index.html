@@ -4,48 +4,66 @@
         <meta charset="UTF-8">
         <meta name="author" content="Andrea Andreetta">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Very flat html website.">
+        <meta name="description" content="Very flat html website made for fun.">
         <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style/main.css">
-        <title>home</title>
+        <link rel="stylesheet" href="style/aafw-extra.css">
+        <script type="text/javascript" src="js/main.js"></script>
+        <title>Home | Andrea Andreetta</title>
     </head>
-    <body>    
-        <div class="grid">
-            <div class="col-6">
-                <div class="container">
-                    <img src="img/andrea-andreetta-img-home.jpg" alt="Andrea Andreetta" class="responsive">
-                    <div class="middle">
-                        <div class="text">yes, it's me!</div>
+    <body> 
+        <!-- Sidebar -->
+        <div class="aafw-sidebar aafw-bar-block aafw-card aafw-animate-left" style="display:none" id="mySidebar">
+            <button class="aafw-bar-item aafw-button aafw-large"
+            onclick="aafw_close()">Close &times;</button>
+            <a href="#" class="aafw-bar-item aafw-button">Link 1</a>
+            <a href="#" class="aafw-bar-item aafw-button">Link 2</a>
+            <a href="#" class="aafw-bar-item aafw-button">Link 3</a>
+        </div>
+        <!-- Page Content -->
+        <div id="main">
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <button id="openNav" class="aafw-button aafw-teal aafw-xlarge" onclick="aafw_open()">&#9776;</button> 
+                    </header>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-6">
+                    <div class="container">
+                        <img src="img/andrea-andreetta-img-home.jpg" alt="Andrea Andreetta" class="responsive">
+                        <div class="middle">
+                            <div class="text">yes, it's me!</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
-                <div class="box-name">Andrea Andreetta</div>
-                <div class="box-sub">Designer / Tech enthusiast / Content creator / HTML & CSS exper</div>
-                <div class="box-info">I live in Egypt for most of the year, content creator, HTML & CSS expert for work, fashion accessories designer for passion, I often write and organize cultural events. Tech enthusiast of the first hour as a true nerd inside.</div>
-            </div>
-        </div>
-        
-        <div class="grid">
-            <div class="col-6">
-                <div class="box-social">
-                    <p><a href="https://www.facebook.com/andrea.andreetta" target="_blank">facebook</a></p>
-                    <p><a href="https://www.linkedin.com/in/andreaandreetta/" target="_blank">linkedin</a></p>
-                    <p><a href="https://www.instagram.com/areaottantotto/" target="_blank">instagram</a></p>
-                    <p><a href="mailto:andrea@andreaandreetta.it?Subject=Hello%20Andrea" target="_top">email</a></p>
+                <div class="col-6">
+                    <div class="box-name">Andrea Andreetta</div>
+                    <div class="box-sub">Designer / Tech enthusiast / Content creator / HTML & CSS exper</div>
+                    <div class="box-info">I live in Egypt for most of the year, content creator, HTML & CSS expert for work, fashion accessories designer for passion, I often write and organize cultural events. Tech enthusiast of the first hour as a true nerd inside.</div>
                 </div>
             </div>
-            <div class="col-6">
-                <img src="img\venice-bridge.jpg" alt="Venice bridge" class="responsive">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12">
-                <footer>
-                   <h6>© 2020 hand made with love by andrea andreetta</h6>
-                </footer>
+            <div class="grid">
+                <div class="col-6">
+                    <div class="box-social">
+                        <p><a href="https://www.linkedin.com/in/andreaandreetta/" target="_blank">LINKEDIN</a></p>
+                        <p><a href="https://www.instagram.com/areaottantotto/" target="_blank">INSTAGRAM</a></p>
+                        <p><a href="https://www.facebook.com/andrea.andreetta" target="_blank">FACEBOOK</a></p>
+                        <p><a href="mailto:andrea@andreaandreetta.it?Subject=Hello%20Andrea" target="_top">EMAIL</a></p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="img\venice-bridge.jpg" alt="Venice bridge" class="responsive">
+                </div>
+            </div>      
+            <div class="row">
+                <div class="col-12">
+                    <footer>
+                    <h6>© 2020 hand made with love by andrea andreetta</h6>
+                    </footer>
+                </div>
             </div>
         </div>
     </body>
