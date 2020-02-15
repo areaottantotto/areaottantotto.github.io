@@ -1,4 +1,6 @@
-/* aafw-extra.CSS 1.0 Febrary 2020 by Andrea Andreetta */
+/* aafw-extra.CSS 1.0 15 Febrary 2020
+
+A small personal framework by Andrea Andreetta */
 
 html {
 	box-sizing:border-box;
@@ -192,14 +194,14 @@ a {
 	width:auto;
 	}
 
-.aafw-bar .aafw-bar-item	{
-			padding:8px 16px;
-			float:left;
-			width:auto;
-			border:none;
-			display:block;
-			outline:0;
-			}
+.aafw-bar .aafw-bar-item {
+	padding:8px 16px;
+	float:left;
+	width:auto;
+	border:none;
+	display:block;
+	outline:0;
+	}
 
 .aafw-bar .aafw-dropdown-hover,.aafw-bar .aafw-dropdown-click {
 	position:static;
@@ -210,16 +212,18 @@ a {
 	white-space:normal;
 	}
 
-.aafw-bar-block .aafw-bar-item	{
-				width:100%;
-				display:block;
-				padding:10px 20px;
-				text-align:left;
-				border:none;
-				white-space:normal;
-				float:none;	
-				outline:0;
-				}
+.aafw-bar-block .aafw-bar-item {
+	width:100%;
+	display:block;
+	padding:10px 20px;
+	text-align:left;
+	border:none;
+	white-space:normal;
+	float:none;	
+	outline:0;
+	color: floralwhite;
+    font-family: 'Fira Mono';
+	}
 
 .aafw-bar-block .aafw-center .aafw-bar-item	{
 					text-align:center;
@@ -498,7 +502,7 @@ a {
 .aafw-sand,.aafw-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 
 .aafw-teal,.aafw-hover-teal:hover {
-	color:#fff!important;
+	color:floralwhite !important;
 	background-color:#009688!important;
 	}
 

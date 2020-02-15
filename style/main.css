@@ -5,6 +5,12 @@
     *behavior: url(boxsizing.htc);
    }
 
+/* header */
+
+header {
+    background-color: #009688;
+    }
+
 /* text styles */
 
 h1 {
@@ -101,14 +107,7 @@ body {
     background: DarkSlateGray;
     }
 
-/* row & column */
-
-.row {
-    width: 100%;
-    /* max-width: 1400px; */
-    /* min-width: 720px; */
-    margin: 0 auto;
-   }
+/* column */
 
 [class*='col-'] {
     float: left;
