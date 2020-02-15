@@ -1,6 +1,6 @@
 function aafw_open() {
-    document.getElementById("main").style.marginLeft = "30%";
-    document.getElementById("mySidebar").style.width = "30%";
+    document.getElementById("main").style.marginLeft = "40%";
+    document.getElementById("mySidebar").style.width = "40%";
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("openNav").style.display = 'none';
   }
