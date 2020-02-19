@@ -234,9 +234,38 @@ a {
 		width:100%
 		}
 
-.aafw-responsive{display:block;overflow-x:auto}
-.aafw-container:after,.aafw-container:before,.aafw-panel:after,.aafw-panel:before,.aafw-row:after,.aafw-row:before,.aafw-row-padding:after,.aafw-row-padding:before,
-.aafw-cell-row:before,.aafw-cell-row:after,.aafw-clear:after,.aafw-clear:before,.aafw-bar:before,.aafw-bar:after{content:"";display:table;clear:both}
+.aafw-responsive {
+	display:block;
+	overflow-x:auto;
+	width: -webkit-fill-available;
+	}
+
+.aafw-container-photo:hover .aafw-responsive {
+	opacity: 0.3;
+	}
+		  
+.aafw-container-photo:hover .middle {
+	opacity: 1;
+	}   	
+
+.aafw-container:after,
+.aafw-container:before,
+.aafw-panel:after,
+.aafw-panel:before,
+.aafw-row:after,
+.aafw-row:before,
+.aafw-row-padding:after,
+.aafw-row-padding:before,
+.aafw-cell-row:before,
+.aafw-cell-row:after,
+.aafw-clear:after,
+.aafw-clear:before,
+.aafw-bar:before,
+.aafw-bar:after {
+	content:"";
+	display:table;
+	clear:both
+	}
 
 .aafw-col,.aafw-half,.aafw-third,.aafw-twothird,.aafw-threequarter,.aafw-quarter{float:left;width:100%}
 .aafw-col.s1{width:8.33333%}.aafw-col.s2{width:16.66666%}.aafw-col.s3{width:24.99999%}.aafw-col.s4{width:33.33333%}
@@ -376,8 +405,29 @@ a {
 
 .aafw-circle{border-radius:50%}
 .aafw-round-small{border-radius:2px}.aafw-round,.aafw-round-medium{border-radius:4px}.aafw-round-large{border-radius:8px}.aafw-round-xlarge{border-radius:16px}.aafw-round-xxlarge{border-radius:32px}
-.aafw-row-padding,.aafw-row-padding>.aafw-half,.aafw-row-padding>.aafw-third,.aafw-row-padding>.aafw-twothird,.aafw-row-padding>.aafw-threequarter,.aafw-row-padding>.aafw-quarter,.aafw-row-padding>.aafw-col{padding:0 8px}
-.aafw-container,.aafw-panel{padding:0.01em 16px}.aafw-panel{margin-top:16px;margin-bottom:16px}
+.aafw-row-padding,
+.aafw-row-padding>.aafw-half,
+.aafw-row-padding>.aafw-third,
+.aafw-row-padding>.aafw-twothird,
+.aafw-row-padding>.aafw-threequarter,
+.aafw-row-padding>.aafw-quarter,
+.aafw-row-padding>.aafw-col {
+	padding:0 8px;
+	}
+
+.aafw-container,
+.aafw-panel {
+	padding:0.01em 16px
+	}
+
+.aafw-container-photo {
+		padding: 0px
+		}
+	
+.aafw-panel {
+	margin-top:16px;
+	margin-bottom:16px;
+	}
 
 .aafw-code,.aafw-codespan{font-family:Consolas,"courier new";font-size:16px}
 .aafw-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
