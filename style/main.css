@@ -133,6 +133,12 @@ body {
     padding: 0px;
    }
 
+.col-3 {
+    width: 25%;
+    height: 100%;
+    display: table-cell;
+   }
+
 .col-4 {
     width: 33.33%;
     height: 100%;
